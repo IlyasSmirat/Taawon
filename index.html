@@ -13,7 +13,7 @@
         class="p-0 m-0 min-h-screen bg-cover bg-center bg-fixed"
         style="background-image: url('images/back.png');"
     >
-    <header class="bg-amber-200 w-full h-20 flex items-center border-b border-amber-900/20">
+    <header class="bg-amber-200 w-full h-20 flex items-center border-b border-amber-900">
         <img class="w-14 ml-4" src="images/image.png" alt="Logo">
 
         <h1 class="ml-4 font-bold text-2xl">
@@ -43,12 +43,12 @@
 
                 <div class="flex flex-wrap gap-3 mt-6">
                     <a href="cooperatives.html"
-                       class="bg-black text-white px-4 py-3 rounded-xl text-sm hover:bg-gray-800">
+                       class="bg-black text-white px-4 py-3 rounded-xl text-sm hover:bg-amber-900">
                         Découvrir les coopératives
                     </a>
 
                     <a href="#partenariat"
-                       class="bg-black text-white px-4 py-3 rounded-xl text-sm hover:bg-gray-800">
+                       class="bg-black text-white px-4 py-3 rounded-xl text-sm hover:bg-amber-900">
                         Devenir partenaire
                     </a>
                 </div>
@@ -60,10 +60,10 @@
                     Nos catégories d'artisanat
                 </h2>
 
-                <div class="grid grid-cols-2 sm:grid-cols-3 gap-5">
+                <div class="grid grid-cols-3 sm:grid-cols-3 gap-3">
 
                     <!-- zlig -->
-                    <div class="relative h-24 rounded-lg overflow-hidden">
+                    <div class="relative h-32 rounded-lg overflow-hidden col-span-2 row-span-3">
                         <img src="images/zlig.png"
                              alt="Zellige marocain"
                              class="w-full h-full object-cover">
@@ -74,7 +74,7 @@
                     </div>
 
                     <!-- fkhar -->
-                    <div class="relative h-24 rounded-lg overflow-hidden">
+                    <div class="relative h-32 rounded-lg overflow-hidden">
                         <img src="images/fkhar.jpg"
                              alt="Poterie marocaine"
                              class="w-full h-full object-cover">
@@ -85,7 +85,7 @@
                     </div>
 
                     <!-- cuir -->
-                    <div class="relative h-24 rounded-lg overflow-hidden">
+                    <div class="relative h-32 rounded-lg overflow-hidden">
                         <img src="images/cuir.jpg"
                              alt="Artisanat du cuir"
                              class="w-full h-full object-cover">
@@ -95,7 +95,7 @@
                         </span>
                     </div>
                 <!-- trz -->
-                <div class="relative h-24 rounded-lg overflow-hidden">
+                <div class="relative h-32 rounded-lg overflow-hidden">
                     <img src="images/trz.jpg"
                         alt="Tissage marocain"
                         class="w-full h-full object-cover">
@@ -105,7 +105,7 @@
                     </span>
                 </div>
                 <!-- slali -->
-                <div class="relative h-24 rounded-lg overflow-hidden">
+                <div class="relative h-32 rounded-lg overflow-hidden">
                     <img src="images/slali.jpg"
                         alt="Vannerie marocaine"
                         class="w-full h-full object-cover">
@@ -116,7 +116,7 @@
                 </div>
 
                 <!-- argan -->
-                <div class="relative h-24 rounded-lg overflow-hidden">
+                <div class="relative h-32 rounded-lg overflow-hidden col-span-2">
                     <img src="images/argan.jpg"
                         alt="Produits d'argan"
                         class="w-full h-full object-cover">
@@ -147,8 +147,6 @@
         </div>
 
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
-
-            <!-- Coopérative 1 -->
             <article class="bg-white rounded-xl overflow-hidden">
                 <img src="images/fkhar.jpg"
                     alt="Poterie artisanale marocaine"
@@ -177,8 +175,6 @@
                     </a>
                 </div>
             </article>
-
-            <!-- Coopérative 2 -->
             <article class="bg-white rounded-xl overflow-hidden">
                 <img src="images/trz.jpg"
                     alt="Tissage traditionnel marocain"
@@ -208,7 +204,6 @@
                 </div>
             </article>
 
-            <!-- Coopérative 3 -->
             <article class="bg-white rounded-xl overflow-hidden">
                 <img src="images/argan.jpg"
                     alt="Produits artisanaux à base d'argan"
@@ -238,8 +233,73 @@
                 </div>
             </article>
     </section>
+    <section class = "mx-6 md:mx-10 mt-8 p-6 bg-amber-200 rounded-lg">
+        <h2 class = "text-2xl font-bold mb-5">
+            Ils parlent de nous
+        </h2>
+        <div class = "grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+            <article class = "bg-white rounded-lg overflow-hidden p-5">
+                <p class = "text-gray">
+                "Notre coopérative peut enfin présenter
+                son savoir-faire à un public plus large."
+                </p>
+                <h3 class = "font-bold mt-4">
+                    Fatima Zahra
+                </h3>
+                <p class = "text-sm text-grey mt-1">
+                    Artisane
+                </p>
+            </article>
+            <article class = "bg-white rounded-lg overflow-hidden p-5">
+                <p class = "text-grey">
+        "J'ai découvert des coopératives passionnées et des
+        produits qui reflètent la richesse de notre patrimoine."
+                </p>
+                <h3 class = "font-bold mt-4">
+                    Acheteur professionnel
+                </h3>
+                <p class = "text-sm text-grey mt-1">
+                    Youssef Amrani
+                </p>
+            </article>
+                        <article class = "bg-white rounded-lg overflow-hidden p-5">
+                <p class = "text-grey">
+        "Cette initiative aide à préserver les traditions
+        artisanales et à transmettre notre savoir-faire."
+                </p>
+                <h3 class = "font-bold mt-4">
+                    Partenaire de l'artisanat
+                </h3>
+                <p class = "text-sm text-grey mt-1">
+                    Amina Monib
+                </p>
+            </article>
+        </div>
+    </section>
+    <section class = "mx-6 md:mx-10 mt-8 p-6 bg-amber-200 rounded-lg">
+        <div class = "grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+            <div>
+                <h1 class = "text-2xl font-bold">
+                    Lettre d’ informations
+                </h1>
+                <p class = "mt-4 text-grey">
+                Découvrez nos nouvelles coopératives,
+                leurs créations et les richesses de l’artisanat marocain.
+                </p>
+            </div>
+            <div class = "flex items-center flex-col gap-4">
+                <input 
+                type="email"
+                name="email"
+                placeholder="Votre adresse email"
+                required
+                class = "w-full bg-white h-10 rounded-4xl p-5 outline-none text-left"
+                >
+                <button type="submit" class = "rounded-4xl bg-white text-black hover:bg-amber-900 px-5 py-2">Inscription</button>
+            </div>
+        </div>  
+    </section>
     </div>
     </main>
-
-</body>
-</html>
+    </body>
+    </html>
