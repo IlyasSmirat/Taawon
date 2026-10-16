@@ -1,25 +1,245 @@
     <!DOCTYPE html>
-    <html lang="en">
+    <html lang="fr">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
         <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
         <title>Taawon - L’artisanat marocain, autrement</title>
     </head>
-    <body class ="m-0">
-        <header class = "bg-black w-full h-16 flex items-center">
-            <img class="w-14 ml-4" src="#" alt="Logo">
-            <h1 class="ml-4 font-bold text-2xl text-white">
-                Taawon
-            </h1>
-            <nav class="flex gap-6 ml-auto mr-15 text-white items-center">
-                <a href="index.html">Accueill</a>
-                <a href="cooperatives.html">Coopératives</a>
-                <a href="a-propos.html">A propos</a>
-                <button type="button" class="cursor-pointer text-black border-white bg-white hover:bg-white rounded-full border-4 px-4">
-                    dark
-                </button>
-            </nav>
-        </header>
-    </body>
-    </html>
+
+    <body
+        class="p-0 m-0 min-h-screen bg-cover bg-center bg-fixed"
+        style="background-image: url('images/back.png');"
+    >
+    <header class="bg-amber-200 w-full h-20 flex items-center border-b border-amber-900/20">
+        <img class="w-14 ml-4" src="images/image.png" alt="Logo">
+
+        <h1 class="ml-4 font-bold text-2xl">
+            Taawon
+        </h1>
+
+        <nav class="flex gap-6 ml-auto mr-6 md:mr-15 text-black">
+            <a href="index.html">Accueil</a>
+            <a href="cooperatives.html">Coopératives</a>
+            <a href="a-propos.html">À propos</a>
+        </nav>
+    </header>
+    <main>
+        <section
+            class="flex flex-col md:flex-row justify-between items-center gap-8 p-6 "
+        >
+            <div class="w-full md:w-1/2">
+
+                <h2 class="text-white font-bold text-3xl md:text-4xl">
+                    L’artisanat marocain
+                </h2>
+
+                <p class="text-lg mt-4 text-white">
+                    Découvrez le savoir-faire de nos coopératives
+                    et la richesse de l’artisanat marocain.
+                </p>
+
+                <div class="flex flex-wrap gap-3 mt-6">
+                    <a href="cooperatives.html"
+                       class="bg-black text-white px-4 py-3 rounded-xl text-sm hover:bg-gray-800">
+                        Découvrir les coopératives
+                    </a>
+
+                    <a href="#partenariat"
+                       class="bg-black text-white px-4 py-3 rounded-xl text-sm hover:bg-gray-800">
+                        Devenir partenaire
+                    </a>
+                </div>
+
+            </div>
+            <div class="w-full md:w-1/2">
+                
+                <h2 class="text-xl font-bold mb-4 text-center text-white ">
+                    Nos catégories d'artisanat
+                </h2>
+
+                <div class="grid grid-cols-2 sm:grid-cols-3 gap-5">
+
+                    <!-- zlig -->
+                    <div class="relative h-24 rounded-lg overflow-hidden">
+                        <img src="images/zlig.png"
+                             alt="Zellige marocain"
+                             class="w-full h-full object-cover">
+
+                        <span class="absolute bottom-0 left-0 w-full bg-black/50 text-white text-sm p-2">
+                            Zellige
+                        </span>
+                    </div>
+
+                    <!-- fkhar -->
+                    <div class="relative h-24 rounded-lg overflow-hidden">
+                        <img src="images/fkhar.jpg"
+                             alt="Poterie marocaine"
+                             class="w-full h-full object-cover">
+
+                        <span class="absolute bottom-0 left-0 w-full bg-black/50 text-white text-sm p-2">
+                            Poterie
+                        </span>
+                    </div>
+
+                    <!-- cuir -->
+                    <div class="relative h-24 rounded-lg overflow-hidden">
+                        <img src="images/cuir.jpg"
+                             alt="Artisanat du cuir"
+                             class="w-full h-full object-cover">
+
+                        <span class="absolute bottom-0 left-0 w-full bg-black/50 text-white text-sm p-2">
+                            Cuir
+                        </span>
+                    </div>
+                <!-- trz -->
+                <div class="relative h-24 rounded-lg overflow-hidden">
+                    <img src="images/trz.jpg"
+                        alt="Tissage marocain"
+                        class="w-full h-full object-cover">
+
+                    <span class="absolute bottom-0 left-0 w-full bg-black/50 text-white text-sm p-2">
+                        Tissage
+                    </span>
+                </div>
+                <!-- slali -->
+                <div class="relative h-24 rounded-lg overflow-hidden">
+                    <img src="images/slali.jpg"
+                        alt="Vannerie marocaine"
+                        class="w-full h-full object-cover">
+
+                    <span class="absolute bottom-0 left-0 w-full bg-black/50 text-white text-sm p-2">
+                        Vannerie
+                    </span>
+                </div>
+
+                <!-- argan -->
+                <div class="relative h-24 rounded-lg overflow-hidden">
+                    <img src="images/argan.jpg"
+                        alt="Produits d'argan"
+                        class="w-full h-full object-cover">
+
+                    <span class="absolute bottom-0 left-0 w-full bg-black/50 text-white text-sm p-2">
+                        Argan
+                    </span>
+                </div>
+                </div>
+            </div>
+        </section>
+    <section class="mx-6 md:mx-10 mt-8 p-6 bg-amber-200 rounded-lg">
+
+        <div class="flex justify-between items-center mb-5">
+            <div>
+                <h2 class="text-2xl font-bold text-black">
+                    À la une
+                </h2>
+                <p class="text-sm text-gray-700 mt-1">
+                    Découvrez nos coopératives artisanales
+                </p>
+            </div>
+
+            <a href="cooperatives.html"
+            class="text-sm font-semibold underline text-black">
+                Voir tout
+            </a>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+
+            <!-- Coopérative 1 -->
+            <article class="bg-white rounded-xl overflow-hidden">
+                <img src="images/fkhar.jpg"
+                    alt="Poterie artisanale marocaine"
+                    class="w-full h-40 object-cover">
+
+                <div class="p-4">
+                    <p class="text-sm text-amber-800 font-medium">
+                        Poterie
+                    </p>
+
+                    <h3 class="text-lg font-bold mt-1">
+                        Coopérative Al Amal
+                    </h3>
+
+                    <p class="text-sm text-gray-600 mt-1">
+                        Safi, Marrakech-Safi
+                    </p>
+
+                    <p class="text-sm text-gray-700 mt-3">
+                        Un savoir-faire traditionnel transmis de génération en génération.
+                    </p>
+
+                    <a href="cooperative.html"
+                    class="inline-block mt-4 font-semibold text-sm underline">
+                        Découvrir la coopérative →
+                    </a>
+                </div>
+            </article>
+
+            <!-- Coopérative 2 -->
+            <article class="bg-white rounded-xl overflow-hidden">
+                <img src="images/trz.jpg"
+                    alt="Tissage traditionnel marocain"
+                    class="w-full h-40 object-cover">
+
+                <div class="p-4">
+                    <p class="text-sm text-amber-800 font-medium">
+                        Tissage
+                    </p>
+
+                    <h3 class="text-lg font-bold mt-1">
+                        Coopérative Tifaouine
+                    </h3>
+
+                    <p class="text-sm text-gray-600 mt-1">
+                        Ouarzazate, Drâa-Tafilalet
+                    </p>
+
+                    <p class="text-sm text-gray-700 mt-3">
+                        Des tapis artisanaux réalisés avec passion et créativité.
+                    </p>
+
+                    <a href="cooperative.html"
+                    class="inline-block mt-4 font-semibold text-sm underline">
+                        Découvrir la coopérative →
+                    </a>
+                </div>
+            </article>
+
+            <!-- Coopérative 3 -->
+            <article class="bg-white rounded-xl overflow-hidden">
+                <img src="images/argan.jpg"
+                    alt="Produits artisanaux à base d'argan"
+                    class="w-full h-40 object-cover">
+
+                <div class="p-4">
+                    <p class="text-sm text-amber-800 font-medium">
+                        Argan
+                    </p>
+
+                    <h3 class="text-lg font-bold mt-1">
+                        Coopérative Toudarte
+                    </h3>
+
+                    <p class="text-sm text-gray-600 mt-1">
+                        Agadir, Souss-Massa
+                    </p>
+
+                    <p class="text-sm text-gray-700 mt-3">
+                        Des produits d'argan issus d'un savoir-faire local.
+                    </p>
+
+                    <a href="cooperative.html"
+                    class="inline-block mt-4 font-semibold text-sm underline">
+                        Découvrir la coopérative →
+                    </a>
+                </div>
+            </article>
+    </section>
+    </div>
+    </main>
+
+</body>
+</html>
