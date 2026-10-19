@@ -1,0 +1,234 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <title>Document</title>
+  </head>
+  <body class="bg-amber-200">
+    <header
+      class="bg-amber-200 w-full h-20 flex items-center sticky top-0 z-50"
+    >
+      <a href="index.html" class="flex items-center">
+      <img class="w-14 ml-4" src="images/artisan.png" alt="Logo">
+
+    <h1 class="ml-4 font-bold text-3xl">
+        Taawon
+    </h1>
+  </a>
+      <nav
+        class="gap-6 ml-auto mr-15 flex flex-wrap justify-center items-center gap-x-4 gap-y-2 sm:ml-auto"
+      >
+        <a href="index.html">Accueill</a>
+        <a href="cooperatives.html">Coopératives</a>
+        <a href="a-propos.html">A propos</a>
+      </nav>
+    </header>
+    <main>
+      <section
+        class="grid grid-cols-1 md:grid-cols-2 gap-10 max-w-6xl  mx-auto px-4 py-12"
+        aria-label="insctiption et questions fréquentes"
+      >
+        <div class="bg-white rounded-xl p-6 border">
+          <h2 class="text-2xl font-bold font-serif mb-5 text-center">
+            Inscription
+          </h2>
+          <form action="#" method="post" class="flex flex-col gap-4 ">
+            <div class="flex flex-col gap-1">
+              <label for="nom" class="font-semibold mb-3"
+                >Nom de la coopérative *</label
+              >
+              <input
+                type="text"
+                id="nom"
+                name="nom"
+                placeholder="Ex. : Coopérative nom"
+                required
+                class="border border-stone-900 rounded-full px-3 py-2 focus:outline-2 focus:outline-orange-600"
+              />
+            </div>
+            <div class="flex flex-col gap-1">
+              <label for="region" class="font-semibold mb-3"
+                >Région / Ville *</label
+              >
+              <input
+                type="text"
+                id="region"
+                name="region"
+                placeholder="Ex. : Fès, région Fès-Meknès"
+                required
+                class="border border-stone-900 rounded-full px-3 py-2 focus:outline-2 focus:outline-orange-600"
+              />
+            </div>
+            <div class="flex flex-col gap-1">
+              <label for="Métier" class="font-semibold mb-3">Métier *</label>
+              <input
+                type="text"
+                name="Métier"
+                id="Métier"
+                placeholder="Ex. : Tisserand, potier, artisan du cuir..."
+                required
+                class="border border-stone-900 rounded-full px-3 py-2 focus:outline-2 focus:outline-orange-600"
+              />
+            </div>
+            <div class="flex flex-col gap-1">
+              <label for="Nombre de membres" class="font-semibold mb-3"
+                >Nombre de membres</label
+              >
+              <input
+                type="text"
+                id="Nombre de membres"
+                name="Nombre de membres"
+                placeholder="Ex. : 12 membres"
+                required
+                class="border border-stone-900 rounded-full px-3 py-2 focus:outline-2 focus:outline-orange-600"
+              />
+            </div>
+            <div class="flex flex-col gap-1">
+              <label for="Description de l'activité" class="font-semibold mb-3"
+                >Description de l'activité *</label
+              >
+              <textarea
+                name="Description de l'activité"
+                id="Description de l'activité"
+                rows="4"
+                placeholder="Votre Message..."
+                class="border border-stone-900 rounded-lg px-3 py-2 focus:outline-2 focus:outline-orange-600"
+              ></textarea>
+            </div>
+            <div class="flex flex-col">
+              <label
+                for="Lien photos / réseaux sociaux"
+                class="font-semibold mb-3"
+                >Lien photos / réseaux sociaux *</label
+              >
+              <input
+                type="text"
+                id="Lien photos / réseaux sociaux"
+                name="Lien photos / réseaux sociaux"
+                required
+                placeholder="Facebook/instageram/youtoub..."
+                class="border border-stone-900 rounded-full px-3 py-2 focus:outline-2 focus:outline-orange-600"
+              />
+            </div>
+            <h3 class="font-bold text-center w-max mx-auto border-b">
+              Personne de contact
+            </h3>
+            <div class="flex flex-col">
+              <label for="email" class="font-semibold mb-3"
+                >Nome Complet*</label
+              >
+              <input
+                type="text"
+                id="email"
+                name="email"
+                required
+                placeholder=" Ex : Votre nome"
+                class="border border-stone-900 rounded-full px-3 py-2 focus:outline-2 focus:outline-orange-600"
+              />
+            </div>
+            <div class="flex flex-col">
+              <label for="email" class="font-semibold">Téléphone *</label>
+              <input
+                type="text"
+                id="email"
+                name="email"
+                required
+                placeholder=" Ex : 0 (6/7) 00 00 00 00"
+                class="border border-stone-900 rounded-full px-3 py-2 focus:outline-2 focus:outline-orange-600"
+              />
+            </div>
+
+            <div class="flex flex-col">
+              <label for="email" class="font-semibold">Emial *</label>
+              <input
+                type="text"
+                id="email"
+                name="email"
+                required
+                placeholder="exemple@gmail.com"
+                class="border border-stone-900 rounded-full px-3 py-2 focus:outline-2 focus:outline-orange-600"
+              />
+            </div>
+            <button
+              class="border border-stone-900 rounded-full bg-black text-white hover:scale-105 font-light"
+            >
+              Envoyer ma demande
+            </button>
+          </form>
+        </div>
+        <div class="bg-amber-200  rounded-lg">
+          <div>
+            <h2 class="font-bold text-center text-3xl mb-5">
+              Questions fréquentes
+            </h2>
+            <div class="flex flex-col gap-3">
+              <div class="mx-15 my-15 ">
+                <h3 class="font-bold text-center w-max border-b mx-auto">
+                  Qui peut rejoindre l'association ?
+                </h3>
+                <p class="mt-2 leading-relaxed font-serif text-center">
+                  Toute coopérative artisanale marocaine officiellement
+                  enregistrée.
+                </p>
+              </div>
+              <div class="mx-15 my-15">
+                <h3 class="font-bold text-center w-max border-b mx-auto">
+                  L'inscription est-elle payante ?
+                </h3>
+                <p class="mt-2 leading-relaxed font-serif text-center">
+                  Non, l'inscription est gratuite. Notre objectif est de donner
+                  de la visibilité aux coopératives, sans frais d'entrée.
+                </p>
+              </div>
+              <div class="mx-15 my-15 ">
+                <h3 class="font-bold text-center w-max border-b mx-auto">
+                  Combien de temps faut-il pour être validé ?
+                </h3>
+                <p class="mt-2 leading-relaxed font-serif text-center">
+                  Votre demande est examinée par notre équipe sous une semaine.
+                  Vous recevez une réponse par email.
+                </p>
+              </div>
+              <div class="mx-15 my-15">
+                <h3 class="font-bold text-center w-max border-b mx-auto">
+                  Quels documents dois-je fournir ?
+                </h3>
+                <p class="mt-2 leading-relaxed font-serif text-center">
+                  Le nom de la coopérative, sa région, un email de contact et
+                  une courte présentation de ses produits et de son
+                  savoir-faire.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+            <footer class="flex pt-5 text-white bg-black flex flex-row flex-wrap justify-around gap-6">
+        <p class="p-5 flex justify-start border-r border-[#4e5154]">© 2026 Taawon. Tous droits réservés. Valorisons ensemble l’artisanat marocain.</p>
+        <div class="grid grid-cols-1 gap-2">
+        <div class="flex flex-row justify-start">
+            <div class="flex gap-2 justify-center">
+                <img src="images/gmail.png" alt="Gmail-icon" class="max-w-5 max-h-5 mt-5">
+                <p class="mt-4">@TaawonCollectif@gmail.com</p>
+            </div>
+        </div>
+        <div class="flex flex-row gap-2">
+            <img src="images/facebook.png" alt="facebook-icon" class="max-w-5 max-h-5">
+            <p>@Taawon</p>
+            </div>
+        <div class="flex flex-row gap-2">
+            <img src="images/instagram.png" alt="instagram-icon" class="max-w-5 max-h-5">
+            <p>@Taawon.collectif</p>
+        </div>
+        <div class="flex flex-row gap-2">
+            <img src="images/whatsapp.png"  alt="whatsapp-icon" class="max-w-5 max-h-5">
+            <p>+212 6 12 34 56 78</p>
+        </div>
+    </div>
+    </footer>
+  </body>
+</html>

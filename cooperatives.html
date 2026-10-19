@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>Taawon - L’artisanat marocain, autrement</title>
+</head>
+<body class ="m-0 bg-amber-200">
+    <main>
+    <header class = "bg-[#fde68a] p-2 w-full flex flex-row flex-wrap items-center">
+       <a href="index.html" class="flex items-center">
+    <img class="w-14 ml-4" src="images/artisan.png" alt="Logo">
+
+    <h1 class="ml-4 font-bold text-3xl">
+        Taawon
+    </h1>
+</a>
+        <nav class="flex gap-6 ml-auto mr-15">
+            <a href="index.html">Accueill</a>
+            <a href="cooperatives.html">Coopératives</a>
+            <a href="a-propos.html">A propos</a>
+        </nav>
+    </header>
+        <section class=" bg-[url('./images/artisanalCopsBackground.png')] bg-cover bg-center">
+            <div class="w-full max-w-4xl mx-auto px-4">
+                <h1 class="text-2xl md:text-4xl font-bold text-white text-center pt-10">
+                    Nos coopératives artisanales
+                </h1>
+
+            <p class="text-white text-center mt-4">
+                Découvrez Taawon, une plateforme qui met en valeur
+                 l’artisanat marocain et soutient les coopératives locales.
+                  Explorez des créations authentiques, des produits faits à
+                   la main et le savoir-faire de nos artisans, tout en contribuant
+                    à préserver notre patrimoine culturel.
+            </p>
+            </div>
+                <div class="flex justify-center">
+                <label for="Catégorie" class="text-black font-bold rounded-xl bg-[#E3DFDE] px-8 py-4 mt-4">Chercher par mots clées :</label>
+            </div>
+            <div class="gap-6 flex justify-center flex-row flex-wrap p-10">
+            <p class="flex font-semibold bg-green-500 items-center p-2 rounded-full">Selectionner avec Catégorie :</p>
+            <select class="text-center rounded bg-[#a9a9a9]" name="Catégorie" id="Catégorie" class="">
+                <option value="Artisanat">Artisanat</option>
+                <option value="Produits de terroir">Produits de Terroir</option>
+                <option value="Apiculture durable">Apiculture durable</option>
+                <option value="Tourisme">Tourisme</option>
+                <option value="">Agriculture</option>
+            </select>
+            <p class="flex font-semibold bg-green-500 items-center p-2 rounded-full">Selectionner avec Région :</p>
+            <select class="text-center rounded ml-2 bg-[#a9a9a9]" name="Région" id="Région" class="">
+                <option value="Souss-massa">Souss-massa</option>
+                <option value="Marrakech">Marrakech</option>
+                <option value="Fès-Meknes">Fès-Meknes</option>
+                <option value="Béni Mellal-Khénifra">Béni Mellal-Khénifra</option>
+                <option value="Rabat-Salé-Kenitra"> Rabat-Salé-Kenitra</option>
+                <option value="Drâa-Tafilalet">Drâa-Tafilalet</option>
+            </select>
+        </div>
+            </section>
+            <section>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 p-4 md:p-8 pt-10 sm:pt-30 sm:">
+                    <!-- coop1 -->
+                <div class="w-full max-w-sm mx-auto bg-orange-300 rounded-lg p-3">
+                     <p class="flex justify-center font-bold text-xl p-2 mt-4"> Coopérative Fakhar</p>
+                        <img src="images/cop1.png" alt="handmadePottery" class="w-80 h-80 border-black border-2 rounded-lg mx-auto mt-4">
+                <p class=" pl-2 mt-5">- Region: Marrakech</p>
+                <p class=" pl-2">- Catégorie: Artisanat</p>
+                <p class=" pl-2">- Description:</p>
+                <p class=" pl-2 italic">Découvrez la beauté de la poterie marocaine faite à la main.
+                    Chaque pièce est décorée avec des motifs traditionnels uniques.
+                    Un savoir-faire artisanal qui préserve le patrimoine marocain.<br></p>
+                    <a href="cooperative.html" class="pt-9 text-[#518AFC] flex justify-center border-b mx-auto w-max">Voir plus</a>
+                </div>
+                <!-- coop2 -->
+                <div class="w-full max-w-sm mx-auto bg-orange-300 rounded-lg p-3">
+                    <p class="flex justify-center font-bold text-xl p-2 mt-4">Tapis Amazighs de l’Atlas</p>
+                    <img src="images/lesTapisBerber.png" alt="tapis-atlas" class="w-80 h-80 border-black border-2 rounded-lg mx-auto mt-4 object-cover">
+                    <p class=" pl-2 mt-5">- Region: Souss-massa</p>
+                    <p class=" pl-2">- Catégorie: Artisanat</p>
+                    <p class=" pl-2">- Description:</p>
+                    <p class=" pl-2 italic">Découvrez les tapis amazighs de l’Atlas,
+                        tissés à la main par des artisans passionnés. Chaque tapis 
+                        raconte une histoire à travers ses motifs traditionnels, ses couleurs
+                        chaleureuses et son savoir-faire ancestral marocain.<br></p>
+                <a href="cooperative.html" class="pt-3 text-[#518AFC] flex justify-center border-b w-max mx-auto">Voir plus</a>
+                </div>
+                <!-- coop3 -->
+                <div class="w-full max-w-sm mx-auto bg-orange-300 rounded-lg p-3">
+                    <p class="flex justify-center font-bold text-xl p-2 mt-4">Ayyur d'Argane</p>
+                    <img src="images/Argane.png" alt="Argane-Pic" class="w-80 h-80 border-black border-2 rounded-lg mx-auto mt-4 object-cover">
+                    <p class=" pl-2 mt-5">- Region: Souss-massa</p>
+                    <p class=" pl-2">- Catégorie: Produits du Terroir</p>
+                    <p class=" pl-2">- Description:</p>
+                    <p class=" pl-2 italic">Découvrez l’huile d’argan marocaine,
+                         extraite traditionnellement des noix d’argan par des coopératives
+                          locales. Riche en savoir-faire ancestral, elle est appréciée pour ses 
+                          bienfaits naturels et ses multiples utilisations.<br></p>
+                <a href="cooperative.html" class="pt-3 text-[#518AFC] flex justify-center border-b w-max mx-auto">Voir plus</a>
+            </div>
+            <!-- coop4 -->
+                <div class="w-full max-w-sm mx-auto bg-orange-300 rounded-lg p-3">
+                    <p class="flex justify-center font-bold text-xl p-2 mt-4">Zellij El fassi</p>
+                    <img src="images/Zelij.png" alt="zelij-lfassi" class="w-80 h-80 border-black border-2 rounded-lg mx-auto mt-4 object-cover">
+                    <p class=" pl-2 mt-5">- Region: Fès-Meknes</p>
+                    <p class=" pl-2">- Catégorie: Artisanat</p>
+                    <p class=" pl-2">- Description:</p>
+                    <p class=" pl-2 italic">Découvrez le zellige marocain,
+                         un art traditionnel façonné à la main par des artisans
+                          passionnés. Chaque pièce associe des couleurs éclatantes 
+                          et des motifs géométriques uniques, préservant ainsi le riche
+                           patrimoine artisanal de Fès.<br></p>
+                <a href="cooperative.html" class="pt-4 text-[#518AFC] flex justify-center border-b w-max mx-auto">Voir plus</a>
+            </div>
+             <!-- coop5 -->
+                <div class="w-full max-w-sm mx-auto bg-orange-300 rounded-lg p-3">
+                    <p class="flex justify-center font-bold text-xl p-2 mt-4">Tazrart Coopérative</p>
+                    <img src="images/elevage.png" alt="handmadePottery" class="w-80 h-80 border-black border-2 rounded-lg mx-auto mt-4 object-cover">
+                    <p class=" pl-2 mt-5">- Region: Drâa-Tafilalet</p>
+                    <p class=" pl-2">- Catégorie: Agriculture</p>
+                    <p class=" pl-2">- Description:</p>
+                    <p class=" pl-2 italic">Découvrez Tazrart coopérative, 
+                        une coopérative engagée dans l’élevage traditionnel 
+                        et la lutte contre la désertification. Elle protège 
+                        les terres marocaines grâce à un élevage durable et à
+                         la préservation des pâturages.<br></p>
+                <a href="cooperative.html" class="pt-4 text-[#518AFC] flex justify-center border-b w-max mx-auto">Voir plus</a>
+            </div>
+            <!-- coop6 -->
+                <div class="w-full max-w-sm mx-auto bg-orange-300 rounded-lg p-3">
+                    <p class="flex justify-center font-bold text-xl p-2 mt-4">Atlantique</p>
+                    <img src="images/taghazout.png" alt="taghazout-pic" class="w-80 h-80 border-black border-2 rounded-lg mx-auto mt-4 object-cover">
+                    <p class=" pl-2 mt-5">- Region: Rabat-Salé-Kenitra</p>
+                    <p class=" pl-2">- Catégorie: Tourisme</p>
+                    <p class=" pl-2">- Description:</p>
+                    <p class=" pl-2 italic">Découvrez Atlantique,
+                         une coopérative qui valorise le tourisme durable
+                          et la richesse du patrimoine marocain. Elle propose
+                           des expériences authentiques et des activités en pleine
+                            nature à travers les différentes
+                             régions du Maroc.<br></p>
+                <a href="cooperative.html" class="pt-4 text-[#518AFC] flex justify-center border-b w-max mx-auto">Voir plus</a>
+            </div>
+            <!-- coop7 -->
+                <div class="w-full max-w-sm mx-auto bg-orange-300 rounded-lg p-3">
+                    <p class="flex justify-center font-bold text-xl p-2 mt-4">Tifawt</p>
+                    <img src="images/Amlou.png" alt="Amlou pic" class="w-80 h-80 border-black border-2 rounded-lg mx-auto mt-4 object-cover">
+                    <p class=" pl-2 mt-1">- Region: Souss-massa</p>
+                    <p class=" pl-2">- Catégorie: Produits du Terroir</p>
+                    <p class=" pl-2">- Description:</p>
+                    <p class=" pl-2 italic">Découvrez Tifawt,
+                         une coopérative qui prépare un amlou 
+                         marocain traditionnel à base d’amandes, 
+                         d’huile d’argan et de miel, en valorisant les 
+                         saveurs authentiques du Souss.<br></p>
+                <a href="cooperative.html" class="pt-16 text-[#518AFC] flex justify-center border-b w-max mx-auto">Voir plus</a>
+            </div>
+            <!-- coop8 -->
+                <div class="w-full max-w-sm mx-auto bg-orange-300 rounded-lg p-3">
+                    <p class="flex justify-center font-bold text-xl p-2 mt-4">Bnat Bladi</p>
+                    <img src="images/L3ker.png" alt="l3ker-pic" class="w-80 h-80 border-black border-2 rounded-lg mx-auto mt-4 object-cover">
+                    <p class=" pl-2 mt-5">- Region: Fès-Meknes</p>
+                    <p class=" pl-2">- Catégorie: Artisanat</p>
+                    <p class=" pl-2">- Description:</p>
+                    <p class=" pl-2 italic">Découvrez "Bnat Bladi",
+                         une coopérative qui valorise l’Aâkar Fassi, 
+                         un pigment rouge traditionnel marocain utilisé 
+                         dans les rituels de beauté. Inspirée du patrimoine 
+                         marocain.<br></p>
+                <a href="cooperative.html" class="pt-12 text-[#518AFC] flex justify-center border-b w-max mx-auto">Voir plus</a>
+            </div>
+            <!-- coop9 -->
+                <div class="w-full max-w-sm mx-auto bg-orange-300 rounded-lg p-3">
+                    <p class="flex justify-center font-bold text-xl p-2 mt-4">Nesmat Nahl</p>
+                    <img src="images/n7ila.png" alt="taghazout-pic" class="w-80 h-80 border-black border-2 rounded-lg mx-auto mt-4 object-cover">
+                    <p class=" pl-2 mt-5">- Region: Béni Mellal-Khénifra</p>
+                    <p class=" pl-2">- Catégorie: Apiculture durable</p>
+                    <p class=" pl-2">- Description:</p>
+                    <p class=" pl-2 italic">Découvrez Nesmat Nahl,
+                         une coopérative engagée dans la protection 
+                         des abeilles et de leur habitat naturel. Elle 
+                         encourage la préservation des fleurs sauvages, 
+                         sensibilise à l’importance des pollinisateurs et 
+                         contribue à protéger la biodiversité marocaine.<br></p>
+                <a href="cooperative.html" class="mb-2 text-[#518AFC] flex justify-center border-b w-max mx-auto">Voir plus</a>
+            </div>
+        </div>
+    </section>
+    </main>
+    <footer class="flex pt-5 text-white bg-black flex flex-row flex-wrap justify-around gap-6">
+        <p class="p-5 flex justify-start border-r border-[#4e5154]">© 2026 Taawon. Tous droits réservés. Valorisons ensemble l’artisanat marocain.</p>
+        <div class="grid grid-cols-1 gap-2">
+        <div class="flex flex-row justify-start">
+            <div class="flex gap-2 justify-center">
+                <img src="images/gmail.png" alt="Gmail-icon" class="max-w-5 max-h-5 mt-5">
+                <p class="mt-4">@TaawonCollectif@gmail.com</p>
+            </div>
+        </div>
+        <div class="flex flex-row gap-2">
+            <img src="images/facebook.png" alt="facebook-icon" class="max-w-5 max-h-5">
+            <p>@Taawon</p>
+            </div>
+        <div class="flex flex-row gap-2">
+            <img src="images/instagram.png" alt="instagram-icon" class="max-w-5 max-h-5">
+            <p>@Taawon.collectif</p>
+        </div>
+        <div class="flex flex-row gap-2">
+            <img src="images/whatsapp.png"  alt="whatsapp-icon" class="max-w-5 max-h-5">
+            <p>+212 6 12 34 56 78</p>
+        </div>
+    </div>
+    </footer>
+</body>
+</html>

@@ -7,8 +7,21 @@
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
   </head>
   <body>
-    <header>
-      <nav></nav>
+    <header class="bg-amber-200 w-full h-20 flex items-center sticky top-0 z-50">
+      <a href="index.html" class="flex items-center">
+        <img class="w-14 ml-4" src="images/artisan.png" alt="Logo">
+
+      <h1 class="ml-4 font-bold text-3xl">
+          Taawon
+      </h1> 
+    </a>
+      <h1 class="ml-4 font-bold text-3xl">Taawon</h1>
+      <nav class=" gap-6 ml-auto mr-15 flex flex-wrap justify-center items-center gap-x-4 gap-y-2 sm:ml-auto ">
+        <a href="index.html">Accueill</a>
+        <a href="cooperatives.html">Coopératives</a>
+        <a href="a-propos.html">A propos</a>
+
+      </nav>
     </header>
 
     <main>
@@ -67,7 +80,51 @@
         <!-- <h2 class="text-2xl font-bold font-serif mx-auto mt-4 w-max">
           Nos Créations Authentiques
         </h2> -->
-        <section class="py-12">
+        <section>
+          <h2
+            class="text-2xl font-bold font-serif text-center mt-4 w-max border-b mx-auto"
+          >
+            Nos Activités
+          </h2>
+          <p class="text-2xl mx-auto text-center p-2">
+            Découvrez le quotidien de nos artisans au travail.
+          </p>
+          <div
+            class="grid grid-col-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-4xl mx-auto px-4 p-10 justify-items-center"
+          >
+            <figure class="flex flex-col items-center">
+              <img
+                src="images2/LeTapisBerbère.jpeg"
+                alt="Une artisane tisse un tapis berbère sur un métier à tisser"
+                class="w-34 h-34 md:w-44 md:h-44 rounded-full object-cover border transition duration-300 hover:scale-105 hover:shadow-xl"
+              />
+              <figcaption class="text-base font-semibold text-center mt-2">
+                Tissage du tapis
+              </figcaption>
+            </figure>
+            <figure class="flex flex-col items-center">
+              <img
+                src="images2/LeTapisBerbère.jpeg"
+                alt="Une artisane tisse un tapis berbère sur un métier à tisser"
+                class="w-34 h-34 md:w-44 md:h-44 rounded-full object-cover border transition duration-300 hover:scale-105 hover:shadow-xl"
+              />
+              <figcaption class="text-base font-semibold text-center mt-3">
+                Tissage du tapis
+              </figcaption>
+            </figure>
+            <figure class="flex flex-col item-center">
+              <img
+                src="images2/LeTapisBerbère.jpeg"
+                alt="Une artisane tisse un tapis berbère sur un métier à tisser"
+                class="w-34 h-34 md:w-44 md:h-44 rounded-full object-cover border transition duration-300 hover:scale-105 hover:shadow-xl"
+              />
+              <figcaption class="text-base font-semibold text-center mt-2">
+                Tissage du tapis
+              </figcaption>
+            </figure>
+          </div>
+        </section>
+        <section id="catalogue-section" class="py-12">
           <h2 class="text-2xl font-bold font-serif text-center mb-8">
             Nos Créations Authentiques
           </h2>
@@ -77,13 +134,18 @@
           >
             <div class="bg-white rounded-xl shadow-md overflow-hidden">
               <img
-                src="images2/artisanalCopsBackground.webp"
+                src="images2/LeTapisBerbère.jpeg"
                 alt="Plat en poterie de Fès"
                 class="w-full h-56 object-cover"
               />
-              <h3 class="p-4 text-lg font-semibold text-stone-800 text-center">
-                Poterie
+              <h3 class="text-lg font-semibold text-stone-800 text-center">
+                Le Tapis Berbère
               </h3>
+              <p class="text-center">Laine Naturelle De Mouton</p>
+              <p class="text-center">
+                <span class="font-bold">Prix :</span>
+                <span class="text-green-500">220 DH</span>
+              </p>
             </div>
 
             <div class="bg-white rounded-xl shadow-md overflow-hidden">
@@ -92,11 +154,14 @@
                 alt="Tapis berbère tissé à la main"
                 class="w-full h-56 object-cover"
               />
-              <h3 class="p-4 text-lg font-semibold text-stone-800 text-center">
-                Tapis berbère
+              <h3 class="text-lg font-semibold text-stone-800 text-center">
+                La Tagine en terre cuite
               </h3>
-
-              <p>Le Prix :220 DH</p>
+              <p class="text-center">Argile rouge Ou Blanche</p>
+              <p class="text-center">
+                <span class="font-bold">Prix :</span
+                ><span class="text-green-500"> 220 DH</span>
+              </p>
             </div>
 
             <div class="bg-white rounded-xl shadow-md overflow-hidden">
@@ -105,9 +170,14 @@
                 alt="Bouteille d'huile d'argan"
                 class="w-full h-56 object-cover"
               />
-              <h3 class="p-4 text-lg font-semibold text-stone-800 text-center">
+              <h3 class="text-lg font-semibold text-stone-800 text-center">
                 Huile d'argan
               </h3>
+              <p class="text-center">Le fruit de l'arganier</p>
+              <p class="text-center">
+                <span class="font-bold">Prix :</span
+                ><span class="text-green-500"> 220 DH</span>
+              </p>
             </div>
 
             <div class="bg-white rounded-xl shadow-md overflow-hidden">
@@ -116,9 +186,14 @@
                 alt="Sac en cuir marocain"
                 class="w-full h-56 object-cover"
               />
-              <h3 class="p-4 text-lg font-semibold text-stone-800 text-center">
-                Maroquinerie
+              <h3 class="text-lg font-semibold text-stone-800 text-center">
+                Les Babouches (Belgha)
               </h3>
+              <p class="text-center">Cuir de chèvre, de mouton ou de veau</p>
+              <p class="text-center">
+                <span class="font-bold">Prix :</span
+                ><span class="text-green-500"> 220 DH</span>
+              </p>
             </div>
 
             <div class="bg-white rounded-xl shadow-md overflow-hidden">
@@ -127,9 +202,14 @@
                 alt="Mosaïque zellige colorée"
                 class="w-full h-56 object-cover"
               />
-              <h3 class="p-4 text-lg font-semibold text-stone-800 text-center">
+              <h3 class="text-lg font-semibold text-stone-800 text-center">
                 Zellige
               </h3>
+              <p class="text-center">Argile cuite et émaillée</p>
+              <p class="text-center">
+                <span class="font-bold">Prix :</span
+                ><span class="text-green-500"> 220 DH</span>
+              </p>
             </div>
 
             <div class="bg-white rounded-xl shadow-md overflow-hidden">
@@ -138,15 +218,123 @@
                 alt="Lanterne en cuivre ciselé"
                 class="w-full h-56 object-cover"
               />
-              <h3 class="p-4 text-lg font-semibold text-stone-800 text-center">
+              <h3 class="text-lg font-semibold text-stone-800 text-center">
                 Lanterne
               </h3>
+              <p class="text-center">Feuilles de cuivre</p>
+              <p class="text-center">
+                <span class="font-bold">Prix :</span>
+                <span class="text-green-500"> 220 DH</span>
+              </p>
             </div>
           </div>
         </section>
+        <section class="py-12 px-4" aria-labelledby="process-title">
+          <h2
+            id="process-title"
+            class="font-bold font-serif text-2xl w-fit mx-auto border-b"
+          >
+            Processus de fabrication
+          </h2>
+
+          <ol
+            class="grid grid-cols-1 sm:grid-cols-2 gap-6 max-w-4xl mx-auto mt-10"
+          >
+            <li
+              class="bg-white rounded-xl shadow-md p-6 flex items-start gap-4"
+            >
+              <span
+                class="shrink-0 w-10 h-10 rounded-full bg-orange-600 text-white font-bold flex items-center justify-center"
+                aria-hidden="true"
+                >1</span
+              >
+              <h3 class="font-bold text-lg text-stone-800">
+                La sélection et la préparation des matières premières
+              </h3>
+            </li>
+
+            <li
+              class="bg-white rounded-xl shadow-md p-6 flex items-start gap-4"
+            >
+              <span
+                class="shrink-0 w-10 h-10 rounded-full bg-orange-600 text-white font-bold flex items-center justify-center"
+                aria-hidden="true"
+                >2</span
+              >
+              <h3 class="font-bold text-lg text-stone-800">
+                Le façonnage et la mise en forme (le geste)
+              </h3>
+            </li>
+
+            <li
+              class="bg-white rounded-xl shadow-md p-6 flex items-start gap-4"
+            >
+              <span
+                class="shrink-0 w-10 h-10 rounded-full bg-orange-600 text-white font-bold flex items-center justify-center"
+                aria-hidden="true"
+                >3</span
+              >
+              <h3 class="font-bold text-lg text-stone-800">
+                Le séchage ou la stabilisation
+              </h3>
+            </li>
+
+            <li
+              class="bg-white rounded-xl shadow-md p-6 flex items-start gap-4"
+            >
+              <span
+                class="shrink-0 w-10 h-10 rounded-full bg-orange-600 text-white font-bold flex items-center justify-center"
+                aria-hidden="true"
+                >4</span
+              >
+              <h3 class="font-bold text-lg text-stone-800">
+                La cuisson ou la transformation thermique
+              </h3>
+            </li>
+          </ol>
+        </section>
+        <div class="flex   justify-between mx-auto">
+          <div class="">
+            <p class="mb-5 border-b text-center font-bold ">Adresse:</p>
+            <p>Parc Tertiaire Silic - Bâtiment Montréal</p>
+            <p class="text-center">20 Rue d'Arcueil</p>
+            <p class="text-center">94150 Rungis</p>
+          </div>
+          <div class="">
+            <p class="mb-5 border-b w-fit font-bold">Horaire :</p>
+            <p class="mb-3">Lundi-Vendredi</p>
+            <p>09:00 - 15:30</p>
+          </div>
+          <div class="">
+            <p class="mb-5 text-center border-b font-bold">Contact:</p>
+            <p>Phone: <span>05-98-98-987-9</span></p>
+          </div>
+        </div>
       </section>
     </main>
 
-    <footer></footer>
+            <footer class="flex pt-5 text-white bg-black flex flex-row flex-wrap justify-around gap-6">
+        <p class="p-5 flex justify-start border-r border-[#4e5154]">© 2026 Taawon. Tous droits réservés. Valorisons ensemble l’artisanat marocain.</p>
+        <div class="grid grid-cols-1 gap-2">
+        <div class="flex flex-row justify-start">
+            <div class="flex gap-2 justify-center">
+                <img src="images/gmail.png" alt="Gmail-icon" class="max-w-5 max-h-5 mt-5">
+                <p class="mt-4">@TaawonCollectif@gmail.com</p>
+            </div>
+        </div>
+        <div class="flex flex-row gap-2">
+            <img src="images/facebook.png" alt="facebook-icon" class="max-w-5 max-h-5">
+            <p>@Taawon</p>
+            </div>
+        <div class="flex flex-row gap-2">
+            <img src="images/instagram.png" alt="instagram-icon" class="max-w-5 max-h-5">
+            <p>@Taawon.collectif</p>
+        </div>
+        <div class="flex flex-row gap-2">
+            <img src="images/whatsapp.png"  alt="whatsapp-icon" class="max-w-5 max-h-5">
+            <p>+212 6 12 34 56 78</p>
+        </div>
+    </div>
+    </footer>
   </body>
 </html>
