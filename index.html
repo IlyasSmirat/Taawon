@@ -47,7 +47,7 @@
                         Découvrir les coopératives
                     </a>
 
-                    <a href="#partenariat"
+                    <a href="partenaire.html"
                        class="bg-black text-white px-4 py-3 rounded-xl text-sm hover:bg-amber-900">
                         Devenir partenaire
                     </a>
@@ -276,7 +276,7 @@
             </article>
         </div>
     </section>
-    <section class = "mx-6 md:mx-10 mt-8 p-6 bg-amber-200 rounded-lg">
+    <section class = "mx-6 md:mx-10 mt-8 mb-6 p-6 bg-amber-200 rounded-lg">
         <div class = "grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
             <div>
                 <h1 class = "text-2xl font-bold">
@@ -288,14 +288,18 @@
                 </p>
             </div>
             <div class = "flex items-center flex-col gap-4">
-                <input 
-                type="email"
-                name="email"
-                placeholder="Votre adresse email"
-                required
-                class = "w-full bg-white h-10 rounded-4xl p-5 outline-none text-left"
-                >
-                <button type="submit" class = "rounded-4xl bg-white text-black hover:bg-amber-900 px-5 py-2">Inscription</button>
+            <form
+                    class="flex items-center flex-col gap-4"
+                    onsubmit="event.preventDefault(); alert('Inscription réussie !');">
+                <input
+                    type="email"
+                    name="email"
+                    placeholder="Votre adresse email"
+                    required
+                    class="w-full bg-white h-10 rounded-full p-5 outline-none text-left">
+
+                    <button type="submit" class="rounded-full bg-white text-black hover:bg-amber-900 hover:text-white px-5 py-2 transition-colors duration-200">Inscription</button>
+            </form>
             </div>
         </div>  
     </section>
